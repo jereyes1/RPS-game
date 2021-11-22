@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RPS-Project</title>
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/modnorm.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body onload="initialPick()">
+    <h1>Rock, Paper, Scissors</h1>
+    <main>
+      <section class="choice1">
+        <h2>You choose . . .</h2>
+        <div class="images">
+          <a class="rock" onclick="rockPick()">
+            <img id="r-img" src="svg/rock.svg" alt="hand as rock">
+          </a>
+          <a class="paper" onclick="paperPick()">
+            <img id="p-img" src="svg/paper.svg" alt="hand as paper">
+          </a>
+          <a class="scissors" onclick="scissorsPick()">
+            <img id="s-img" src="svg/scissors.svg" alt="hand as scissors">
+          </a>
+        </div>
+      </section>
+      <section class="choice2">
+        <h2>Opponent chooses . . .</h2>
+        <div class="opp-pick">
+          <img id="oppResult" src="">
+        </div>
+        <!-- <img id="o-img" src="svg/mystery.svg" alt="" > -->
+      </section>
+    </main>
+    <section class="scoreboard">
+      <h2 id="result">&nbsp;</h2>
+      
+      <div id="play" class="score">
+        <p id="pscore">0</p>
+        <p class="label">Player</p>
+      </div>
+      <div id="opp" class="score">
+        <p id="oscore">0</p>
+        <p class="label">Opponent</p>
+      </div>
+    </section>
+  <!-- loads javascript -->
+  <script src="js/page.js"></script>
+  </body>
+</html>
