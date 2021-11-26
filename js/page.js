@@ -18,19 +18,14 @@ function genPick() {
     return pick;
 }
 
-comp_score = 0;
-user_score = 0;
-
 function rockPick() {
     pick = genPick();
     if(pick == "svg/rock.svg") {
       document.getElementById('result').innerHTML = "It's a Tie";
     }  else if (pick == "svg/paper.svg") {
       document.getElementById('result').innerHTML = "You Lose";
-      comp_score = comp_score + 1;
     } else {
       document.getElementById('result').innerHTML= "You Win!";
-      user_score = user_score + 1;
     }
 }
 
@@ -55,6 +50,3 @@ function scissorsPick() {
       document.getElementById('result').innerHTML= "You Win!";
     }
 }
-
-sessionStorage.setItem("",);
-sessionStorage.getItem("");
